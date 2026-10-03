@@ -1,0 +1,84 @@
+body {
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(245, 245, 245);
+}
+
+header {
+    background-color: rgb(65, 61, 61);
+    text-align: center;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+}
+
+footer {
+    text-align: center;
+    color: rgb(127, 140, 141);
+    font-size: 13px
+}
+
+h1, h2, h3 {
+    color: rgb(192, 57, 43); 
+}
+
+nav a {
+    color: rgb(245, 245, 245);
+    margin: 15px;
+    text-decoration: none;
+}
+
+main a {
+    color: rgb(0, 0, 255);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+blockquote {
+    font-family: Montserrat, Oswald, System-UI;
+    font-style: italic;
+    color: rgb(61, 66, 66);
+}
+
+header h1 {
+    color: rgb(212, 175, 55);
+}
+
+header h1 span {
+    color: rgb(192, 57, 43);
+    font-style: italic;
+}
+
+span {
+    color: rgb(212, 175, 55);
+    font-weight: bold;
+}
+
+.note {
+    font-size: 13px;
+    color: rgb(127, 140, 141);
+    font-style: italic;
+}
+
+#hero-name {
+    text-transform: uppercase;
+    color: rgb(192, 57, 43);
+}
+
+#emphasize-text {
+    color: rgb(192, 57, 43);
+}
+
+#de-emphasize-text {
+    color: rgb(127, 140, 141);
+}
+
+#theme-colors {
+    color: rgb(65, 61, 61);
+}
