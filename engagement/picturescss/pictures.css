@@ -4,10 +4,16 @@ body p {
     line-height: 1.5;
 }
 
-ol li {
+dt {
     font-family: Arial, sans-serif;
     font-size: 16px;
     font-weight: bold;
+}
+
+dd {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 blockquote {
