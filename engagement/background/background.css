@@ -3,23 +3,18 @@ body {
     background: blue url("background.jpeg") repeat;
     color: white;
 }
-
-
 ul {
   list-style-image: url("dot.png");
 }
-
 header {
   background: url("redFlowerSmall.png") no-repeat right top;
   padding: 40px;
 }
-
 body {
   background-color: #e8dcc8;
   background-image: url("background.jpeg");
   background-repeat: repeat;
 }
-
 #snoopdogg {
     width: 600px;
     height: 400px;
