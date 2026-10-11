@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, Helvetica, Verdana;
+  font-size: 16px;
+  background: url("../destinations/background.jpg") repeat;
+}
+
+header {
+  background: url("../destinations/fingerprint.png") no-repeat right;
+  padding: 70px;
+  text-align: center;
+  color:black
+}
+
+nav {
+  gap: 30px;
+  background-color: #ffffff;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+ul {
+  list-style-image: url("../destinations/ul-list.png");
+}
+
+footer {
+  text-align: center;
+  color: black;
+  font-size: 13px;
+}
+
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
