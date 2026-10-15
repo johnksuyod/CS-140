@@ -1,0 +1,52 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav ul {
+    list-style-type:none;
+}
+nav li {
+    float: left;
+}
+nav a {
+    display: block;
+    padding: 10px 5px;
+    background-color: aliceblue;
+    border-bottom: thin solid #FFF;
+    margin-left: 10px;
+    width: 120px;
+    color:blue
+}
+
+nav a:hover {
+    background-color:blue;
+    color: aliceblue;
+}
+
+
+h2 {
+    clear:both;
+}
+.float-image-left{
+    float:left;
+}
+.float-image-right{
+    float:right;
+}
+.float-image-none{
+    float:none;
+}
+/* .relative {
+  position: relative;
+  top: 20px;
+  left: 40px;
+}
+.absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+} */
