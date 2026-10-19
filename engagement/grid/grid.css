@@ -1,0 +1,38 @@
+body {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.card{
+  border:1px solid #000;
+  box-shadow: 3px 3px 0px rgba(180,180,180,05);
+}
+.parent{
+  display:grid;
+  grid-template-columns: 100px 200px 100px;
+  gap: 10px;
+}
+
+.p1{
+  display:grid;
+  grid-template-columns:100px 100px 100px;
+  gap:10px;
+}
+
+.paragraph{
+  border:1px solid #000;
+  box-shadow: 3px 3px 0px rgba(180,180,180,05);
+}
+
+
+.answer2p{
+  display:grid;
+  grid-template-columns:100px 100px 100px;
+  gap:10px;
+
+}
+
+.answer{
+  border:1px solid #000;
+  box-shadow: 3px 3px 0px rgba(180,180,180,05);
+
+}
