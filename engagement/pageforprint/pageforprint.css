@@ -68,14 +68,11 @@ main{
     padding: 10px;
     background-color:azure;
     width: 60%;
-    margin-bottom: 0 auto 5px auto;
+    margin-bottom: 0;
     border-radius: 5px;
     color: black;
     margin:0;
-    
 }
-
-
 
 @media print {
     nav {
@@ -86,7 +83,6 @@ main{
     }
     body {
         font-family: 'Courier New', Courier, monospace;
-        background-color: none;
     }
     .card-container{
         display:flex;
