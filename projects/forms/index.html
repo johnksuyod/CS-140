@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monsters University</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Create New Account</h1>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>All fields are required.</legend>
+
+                <div class="form-row">
+                    <label for="firstrname">First Name: </label>
+                    <input id="firstrname" type="text" name="firstrname" placeholder="Juan">
+                </div>
+
+                <div class="form-row">
+                    <label for="lastname">Last Name: </label>
+                    <input id="lastname" type="text" name="lastname" placeholder="Dela Cruz">
+                </div>
+
+                <div class="check-row">
+                    <div class="spacer">Gender:</div>
+                    <label><input type="radio" name="gender" value="male">Male</label>
+                    <label><input type="radio" name="gender" value="female">Female</label>
+                </div>
+
+                <div class="form-row">
+                    <label for="birthdate">Birthdate: </label>
+                    <input id="birthdate" type="date" name="birthdate">
+                </div>
+
+                <div class="form-row">
+                    <label for="region">Region: </label>
+                    <select id="region" name="region">
+                        <option value="">Select a region</option>
+                        <option value="01">Region I</option>
+                        <option value="02">Region II</option>
+                        <option value="03">Region III</option>
+                        <option value="04-A">Region IV-A</option>
+                        <option value="04-B">MIMAROPA Region</option>
+                        <option value="05">Region V</option>
+                        <option value="NCR">NCR</option>
+                        <option value="CAR">CAR</option>
+                        <option value="06">Region VI</option>
+                        <option value="07">Region VII</option>
+                        <option value="08">Region VIII</option>
+                        <option value="NIR">NIR</option>
+                        <option value="09">Region IX</option>
+                        <option value="10">Region X</option>
+                        <option value="11">Region XI</option>
+                        <option value="12">Region XII</option>
+                        <option value="13">Region XIII</option>
+                        <option value="BARMM">BARMM</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email: </label>
+                    <input id="email" type="email" name="email" placeholder="juandelacruz@email.com">
+                </div>
+
+                <div class="form-row">
+                    <label for="password">Password: </label>
+                    <input id="password" type="password" name="password">
+                </div>
+
+                <div class="form-row">
+                    <label for="confirm-password">Confirm Password: </label>
+                    <input id="confirm-password" type="password" name="confirm-password">
+                </div>
+
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label for="agree"><input type="checkbox" id="agree" name="agree" value="yes" checked> I agree to the <a href="#">terms and conditions</a></label>
+                </div>
+                
+                <div class="form-row">
+                    <label for="suggestion">Suggestions: </label>
+                    <textarea id="suggestion" name="suggestion"></textarea>
+                </div>
+                
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Sign Up!">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 John Karl</p>
+    </footer>
+</body>
+</html>
