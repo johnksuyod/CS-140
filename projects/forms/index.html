@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monsters University</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <h1>Create New Account</h1>
     </header>
     <main>
-        <form action="#" method="post">
+        <form action="processing.html" method="post" id="myForm">
             <fieldset>
                 <legend>All fields are required.</legend>
 
                 <div class="form-row">
-                    <label for="firstrname">First Name: </label>
-                    <input id="firstrname" type="text" name="firstrname" placeholder="Juan">
+                    <label for="first-name">First Name: </label>
+                    <input id="first-name" type="text" name="firstname" placeholder="Juan">
                 </div>
 
                 <div class="form-row">
-                    <label for="lastname">Last Name: </label>
-                    <input id="lastname" type="text" name="lastname" placeholder="Dela Cruz">
+                    <label for="last-name">Last Name: </label>
+                    <input id="last-name" type="text" name="lastname" placeholder="Dela Cruz">
                 </div>
 
                 <div class="check-row">
@@ -32,8 +34,8 @@
                 </div>
 
                 <div class="form-row">
-                    <label for="birthdate">Birthdate: </label>
-                    <input id="birthdate" type="date" name="birthdate">
+                    <label for="birth-date">Birthdate: </label>
+                    <input id="birth-date" type="date" name="birthdate">
                 </div>
 
                 <div class="form-row">
@@ -73,28 +75,94 @@
 
                 <div class="form-row">
                     <label for="confirm-password">Confirm Password: </label>
-                    <input id="confirm-password" type="password" name="confirm-password">
+                    <input id="confirm-password" type="password" name="confirmpassword">
                 </div>
 
                 <div class="check-row">
                     <div class="spacer"></div>
-                    <label for="agree"><input type="checkbox" id="agree" name="agree" value="yes" checked> I agree to the <a href="#">terms and conditions</a></label>
+                    <label for="conditions"><input type="checkbox" id="conditions" name="agree" value="yes" checked> I agree to
+                        the <a href="#">terms and conditions</a></label>
                 </div>
-                
+
                 <div class="form-row">
                     <label for="suggestion">Suggestions: </label>
                     <textarea id="suggestion" name="suggestion"></textarea>
                 </div>
-                
+
                 <div class="form-row">
                     <div class="spacer"></div>
                     <input type="submit" value="Sign Up!">
                 </div>
             </fieldset>
         </form>
+
+        <hr>
+        <h2>1.What is JavaScript? How did it get its name?</h2>
+        <p>JavaScript is a programming language used to change and modify webpages. Netscape originally created it, and it got its name through a marketing partnership with Sun Microsystems to capitalize on Java's popularity.</p>
+        <h2>2. What are the two ways you can run JavaScript?</h2>
+        <p>The two ways you can run JavaScript are in a web browser and using a runtime like Node.js.</p>
+        <h2>3. What is jQuery? Is it still popular today?</h2>
+        <p>jQuery is a JavaScript library. It was widely used in the past to build websites, and while it still runs on many older sites today, developers rarely use it when building new websites.</p>
+        <h2>4. What is the most popular front-end js library today?</h2>
+        <p>React is the most popular front-end JavaScript library.</p>
+        <h2>5. How does your code prevent the form from being submitted? Why do we need to prevent it?</h2>
+        <p>event.preventDefault() prevents the form from submitting. We need to prevent it so that we can validate the inputs first, and to stop the page from navigating to the URL specified in the action attribute.</p>
     </main>
     <footer>
         <p>&copy; 2026 John Karl</p>
     </footer>
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            
+            const firstName = document.getElementById('first-name').value;
+            const lastName = document.getElementById('last-name').value;
+            const age = document.getElementById('birth-date').value;
+            const location = document.getElementById('region').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+            const termsAndConditions = document.getElementById('conditions').checked;
+            const suggestion = document.getElementById('suggestion').value;
+            
+
+            if (!firstName || !lastName) {
+                alert("You need a name.")
+                return
+            }
+
+            if (!age || age < 18) {
+                alert("You need to be 18.")
+                return;
+            }
+
+            if (!email) {
+                alert("You need an email.")
+                return
+            }
+
+            if (!password || password !== confirmPassword) {
+                alert("Password do not match.")
+                return
+            }
+
+            const formData = {
+                firstName: firstName,
+                lastName: lastName,
+                age: age,
+                location: location,
+                email: email,
+                password: password,
+                confirmPassword: confirmPassword,
+                termsAndConditions: termsAndConditions,
+                suggestion: suggestion
+            };
+            
+            alert("Form Submitted");
+            console.log(formData);
+ 
+        });
+    </script>
 </body>
+
 </html>
