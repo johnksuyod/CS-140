@@ -13,6 +13,7 @@
         <h1>Create New Account</h1>
     </header>
     <main>
+        <div id="message"></div>
         <form action="processing.html" method="post" id="myForm">
             <fieldset>
                 <legend>All fields are required.</legend>
@@ -107,62 +108,19 @@
         <p>React is the most popular front-end JavaScript library.</p>
         <h2>5. How does your code prevent the form from being submitted? Why do we need to prevent it?</h2>
         <p>event.preventDefault() prevents the form from submitting. We need to prevent it so that we can validate the inputs first, and to stop the page from navigating to the URL specified in the action attribute.</p>
+        <hr>
+        <h2>What is AJAX?</h2>
+        <p> AJAX (Asynchronous JavaScript and XML) is a technique in web development to send or receive data from a server.</p>
+        <h2>Why do you put your JS Code in a separate file?</h2>
+        <p>You place your JS Code in a separate file to make the code you wrote look cleaner and easier to read. Like CSS you can also make it reusable through multiple HTML pages. </p>
+        <h2>How do you use the inspector (DevTools) to debug your JavaScript? How do you find the line number of an error?</h2>
+        <p>You use the Console Tab of the Chrome Dev Tools to view runtime errors, syntax errors, and output. To find the line number of error you use the Sources Tab.</p>
+        <h2>Do your form and fields have the same ids that your JavaScript uses? Does the Console show any errors? List your ids, and fix any errors before you submit.</h2>
+        <p>Yes they have the same id's used in java script.</p>
     </main>
     <footer>
         <p>&copy; 2026 John Karl</p>
     </footer>
-    <script>
-        document.getElementById("myForm").addEventListener("submit", function (event) {
-            event.preventDefault();
-            
-            const firstName = document.getElementById('first-name').value;
-            const lastName = document.getElementById('last-name').value;
-            const age = document.getElementById('birth-date').value;
-            const location = document.getElementById('region').value;
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-            const confirmPassword = document.getElementById('confirm-password').value;
-            const termsAndConditions = document.getElementById('conditions').checked;
-            const suggestion = document.getElementById('suggestion').value;
-            
-
-            if (!firstName || !lastName) {
-                alert("You need a name.")
-                return
-            }
-
-            if (!age || age < 18) {
-                alert("You need to be 18.")
-                return;
-            }
-
-            if (!email) {
-                alert("You need an email.")
-                return
-            }
-
-            if (!password || password !== confirmPassword) {
-                alert("Password do not match.")
-                return
-            }
-
-            const formData = {
-                firstName: firstName,
-                lastName: lastName,
-                age: age,
-                location: location,
-                email: email,
-                password: password,
-                confirmPassword: confirmPassword,
-                termsAndConditions: termsAndConditions,
-                suggestion: suggestion
-            };
-            
-            alert("Form Submitted");
-            console.log(formData);
- 
-        });
-    </script>
+    <script src="form.js"></script>
 </body>
-
 </html>
